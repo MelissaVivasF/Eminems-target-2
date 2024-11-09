@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer Linktree</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="tarjeta">
+        <img class="perfil" src="./Assets/eminem.jpg" alt="foto de perfil" />
+        <h1>EMINEM</h1>
+        <p>
+          Soy un rapero, productor y actor estadounidense. Se le atribuye la
+          popularización del hip hop en las clases medias y altas de Estados
+          Unidos.​
+        </p>
+        <div class="enlaces">
+          <a href="https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw" target="_blank">Suscribete a mi canal de YouTube</a>
+          <a href="https://www.eminem.com/" target="_blank">Visita mi página oficial</a>
+          <a href="https://open.spotify.com/intl-es/artist/7dGJo4pcD2V6oG8kP0tJRR" target="_blank">Escucha mis mejores canciones</a>
+          <a href="https://www.netflix.com/co/title/60024922" target="_blank">Conoce mi historia</a>
+        </div>
+        <div class="redes">
+          <a href="https://maps.app.goo.gl/i3Ff75MrF7gqEeBq6" target="_blank" data-message="Aquí nací">🌍</a>
+          <a href="https://www.instagram.com/eminem/" target="_blank" data-message="Mi Instagram">📸</a>
+          <a href="https://x.com/Eminem?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" data-message="Mi X">❌</a>
+          <a href="https://www.tiktok.com/@eminem?lang=es" target= "_blank" data-message="Mi Tik Tok">👁️</a>
+          <p style="color: white;">Escucha mi canción más reconocida. </p>
+          <a href="javascript:void(0);" onclick="mostrarReproductor()" data-message="Da clic ">🔊</a> 
+        </div>
+        
+        
+        <div class="reproductor" id="reproductorSpotify">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <script> 
+      function mostrarReproductor() {
+        var reproductor = document.getElementById("reproductorSpotify");
+        if (reproductor.style.display === "none" || reproductor.style.display === "") {
+          reproductor.style.display = "block";  
+        } else {
+          reproductor.style.display = "none";  
+        }
+      }
+    </script>
+    
+  </body>
+</html>
